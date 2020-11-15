@@ -1,4 +1,4 @@
-- hosts: ~g.-grr-centos-1
+- hosts: g8-grr-centos-1
   become: true
 
   tasks:

@@ -1,5 +1,10 @@
 - hosts: localhost
   become: true
+  pre_tasks:
+    - name: update_repositories
+      yum: update_cache=yes
+      changed_when: False
+
   tasks:
-  - name: Install htop
-    yum: name=htop
+    - include: tasks/packages.yml
+    - include: tasks/users.yml

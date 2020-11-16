@@ -7,4 +7,4 @@
   copy: src=files/ansible_log_rotate dest=/etc/logrotate.d/ansible owner=root group=root mode=0644
 
 - name: Create cron.d entry
-  copy: src=files/ansible_cron dest=/etc/cron.d owner=root group=root mode=0644
+  copy: src=files/ansible_cron dest=/etc/cron.d/ansible owner=root group=root mode=0644

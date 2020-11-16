@@ -1,4 +1,4 @@
-- hosts: g8-grr-centos-1
+- hosts: all
   become: true
   pre_tasks:
     - name: update_repositories
@@ -7,3 +7,9 @@
 
   tasks:
     - include: tasks/packages.yml
+
+- hosts: grr_centos_client_1
+  become: true
+
+  tasks:
+    - include: tasks/flag.yml

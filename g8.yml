@@ -1,5 +1,0 @@
-- hosts: grr-centos-client-1
-  become: true
-
-  tasks:
-    - include: tasks/flag.yml

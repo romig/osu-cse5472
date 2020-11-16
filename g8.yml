@@ -1,4 +1,4 @@
-- hosts: g8-grr-centos-1,g8-grr-centos-1.localdomain
+- hosts: grr-centos-client-1
   become: true
 
   tasks:

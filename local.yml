@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: g8-grr-centos-1
   become: true
   pre_tasks:
     - name: update_repositories

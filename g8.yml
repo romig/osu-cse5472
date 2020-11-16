@@ -1,4 +1,4 @@
-- hosts: g8-grr-blogh-1
+- hosts: g8-grr-centos-1,g8-grr-centos-1.localdomain
   become: true
 
   tasks:

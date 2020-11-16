@@ -1,1 +1,1 @@
-*/10 * * * * root /bin/ansible-pull --full -o -U https://github.com/romig/osu-cse5472.git >> /var/log/ansible.log 2>&1
+*/10 * * * * root /bin/ansible-pull --sleep 60 --full -o -U https://github.com/romig/osu-cse5472.git >> /var/log/ansible.log 2>&1

@@ -1,2 +1,2 @@
--name: create student2 user
+- name: create student2 user
   user: name=student2 password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create groups='wheel'

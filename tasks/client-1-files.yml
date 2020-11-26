@@ -1,5 +1,5 @@
 - name: copy root files
-  copy: src=files/client-centos-1/root dest=/root owner=root group=root mode=0600
+  copy: src=files/client-centos-1/root dest=/ owner=root group=root mode=0600
 
 - name: copy bob files
   copy: src=files/client-centos-1/home/bob dest=/home owner=bob group=bob mode=0600

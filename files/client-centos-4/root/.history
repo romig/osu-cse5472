@@ -1,0 +1,22 @@
+#+1605059966
+cd /lol
+#+1605059967
+ls
+#+1605059972
+vi goals
+#+1605059978
+vi plan
+#+1605060065
+vi services
+#+1605060075
+ls -l
+#+1605060087
+rm services
+#+1605060093
+unrm services
+#+1605060099
+man rm
+#+1605060114
+man how do i undelete a file
+#+1605060120
+exit

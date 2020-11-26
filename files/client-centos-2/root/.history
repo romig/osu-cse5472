@@ -1,0 +1,42 @@
+#+1604802610
+if ( ! { ps -ax | fgrep yawning_dog } ) echo not running
+#+1604802628
+if ( ! { ps -ax | fgrep yawning_dog > & ! /dev/null } ) echo not running
+#+1604802675
+an csh
+#+1604802677
+man csh
+#+1604804008
+echo $shell
+#+1604804014
+ps ax | fgrep yawn
+#+1604804017
+echo $status
+#+1604804023
+pwd
+#+1604804028
+cd .../bin
+#+1604804632
+useradd
+#+1604804651
+useradd -m bob
+#+1604804657
+passwd bob
+#+1604804671
+cd ~bob
+#+1604804674
+ls -l
+#+1604804678
+mkdir ...
+#+1604804680
+cd ...
+#+1604804688
+vi important
+#+1604805019
+useradd mary
+#+1604805024
+mkdir /home/mary
+#+1604805035
+passwd mary
+#+1604805071
+cd ~mary

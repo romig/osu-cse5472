@@ -1,0 +1,8 @@
+- name: create bob
+  user: name=bob password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+- name: create ghost
+  user: name=ghost password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+- name: create linda
+  user: name=linda password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create groups='wheel'

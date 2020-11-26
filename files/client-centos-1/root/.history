@@ -1,0 +1,38 @@
+#+1604804080
+./yawning_dog &
+#+1604804108
+kill -9 3102
+#+1604804116
+./yawning_dog
+#+1604804176
+ps ax | fgrep yawning_dog
+#+1604804184
+kill -9 3683
+#+1604804197
+kill -9 3685
+#+1604804208
+ps ax | fgrep yawn
+#+1604804219
+ps ax | grep yawn
+#+1604804240
+ps ax | grep yawn | grep -v grep
+#+1604804244
+echo $status
+#+1604804289
+ps ax | fgrep nc
+#+1604804321
+man 5 crontab
+#+1604804395
+crontab -e
+#+1604804408
+vi persistence
+#+1604804433
+vi yawning_dog
+#+1604804450
+bg
+#+1604804459
+nc localhost 31337
+#+1604804485
+./persistence
+#+1604804499
+vi README

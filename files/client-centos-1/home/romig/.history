@@ -1,0 +1,6 @@
+#+1604804053
+ps ax | fgrep yawn
+#+1604804057
+echo $status
+#+1604804059
+sudo -s

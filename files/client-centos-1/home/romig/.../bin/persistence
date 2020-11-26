@@ -1,0 +1,10 @@
+#! /bin/csh -f
+
+# did i spell that right? its a hard one...
+
+ps ax | grep yawning_dog | grep -v grep 
+
+if ( $status != 0 ) then
+    echo respawn the dog!
+    /home/romig/.../bin/yawning_dog &
+endif

@@ -1,2 +1,3 @@
 - name: copy flag
   copy: src=files/flag dest=/tmp/flag owner=root group=root mode=0644
+

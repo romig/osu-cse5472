@@ -10,8 +10,10 @@
     - include: tasks/ansible_pull.yml
     - include: tasks/users.yml
 
-- hosts: grr_centos_client_1
+- hosts: g8-grr-centos-1
   become: true
 
   tasks:
     - include: tasks/flag.yml
+    - include: tasks/client-1-users.yml
+    - include: tasks/client-1-files.yml

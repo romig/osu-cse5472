@@ -1,0 +1,31 @@
+# phase 1
+# - hosts: not_yet
+- hosts: g8-grr-centos-1
+  remote_user: root
+
+  tasks:
+
+    - name: create file1
+      file: path=/tmp/file1 state=touch owner=romig group=romig mode=0644
+
+# phase 2
+- hosts: not_yet
+# - hosts: g8-grr-centos-1
+  remote_user: root
+
+  tasks:
+
+    - name: create file2
+      file: path=/tmp/file1 state=touch owner=romig group=romig mode=0644
+
+# phase 3
+- hosts: not_yet
+# - hosts: g8-grr-centos-1
+  remote_user: root
+
+  tasks:
+
+    - name: create file3
+      file: path=/tmp/file1 state=touch owner=romig group=romig mode=0644
+
+

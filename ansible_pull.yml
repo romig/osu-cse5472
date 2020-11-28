@@ -31,6 +31,9 @@
       copy: src=files/hosts dest=/etc/ansible/hosts
               owner=root group=root mode=0644
 
+    - name: Remove the old crontab entry
+      file: path=/etc/cron.d/ansible state=absent
+
     - name: Create crontab entry to clone/pull git repository
       template: src=templates/etc_cron.d_ansible-pull.j2 dest=/etc/cron.d/ansible-pull owner=root group=root mode=0644
 

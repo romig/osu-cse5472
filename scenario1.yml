@@ -7,6 +7,8 @@
   become: true
 
   tasks:
+    # create users
+    
     - name: create bob
       user: name=bob password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
 
@@ -16,6 +18,8 @@
     - name: create linda
       user: name=linda password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create groups='wheel'
 
+    # copy files
+    
     - name: copy root files
       copy: src=files/client-centos-1/root dest=/ owner=root group=root mode=0600
 
@@ -36,6 +40,27 @@
   become: true
 
   tasks:
+    # create users
+
+    - name: create bob
+      user: name=bob password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+    - name: create mary
+      user: name=mary password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+    # copy files
+      
+    - name: copy root files
+      copy: src=files/client-centos-2/root dest=/ owner=root group=root mode=0600
+
+    - name: copy bob files
+      copy: src=files/client-centos-2/home/bob dest=/home owner=bob group=bob mode=0600
+
+    - name: copy mary files
+      copy: src=files/client-centos-2/home/mary dest=/home owner=mary group=mary mode=0600
+
+    - name: copy romig files
+      copy: src=files/client-centos-2/home/romig dest=/home owner=romig group=romig mode=0600
 
 # - hosts: grr_client_3
 - hosts: g8-grr-centos-3
@@ -48,4 +73,23 @@
   become: true
 
   tasks:
+    # create users
+
+    - name: create bob
+      user: name=bob password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+    - name: create mary
+      user: name=mary password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+    # copy files
+      
+    - name: copy root files
+      copy: src=files/client-centos-4/root dest=/ owner=root group=root mode=0600
+
+    - name: copy bob files
+      copy: src=files/client-centos-4/home/bob dest=/home owner=bob group=bob mode=0600
+
+    - name: copy mary files
+      copy: src=files/client-centos-4/home/mary dest=/home owner=mary group=mary mode=0600
+
   

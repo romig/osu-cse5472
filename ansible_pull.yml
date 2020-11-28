@@ -37,16 +37,3 @@
     - name: Create logrotate entry for ansible-pull.log
       template: src=templates/etc_logrotate.d_ansible-pull.j2 dest=/etc/logrotate.d/ansible-pull owner=root group=root mode=0644
 
-
-
-# config various ansible related things
-
-
-- name: Copy ansible inventory
-  copy: src=files/hosts dest=/etc/ansible/hosts owner=root group=root mode=0644
-
-- name: Create logrotate entry
-  copy: src=files/ansible_log_rotate dest=/etc/logrotate.d/ansible owner=root group=root mode=0644
-
-- name: Create cron.d entry
-  copy: src=files/ansible_cron dest=/etc/cron.d/ansible owner=root group=root mode=0644

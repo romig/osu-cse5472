@@ -1,56 +1,67 @@
-# This is the default ansible 'hosts' file.
-#
-# It should live in /etc/ansible/hosts
-#
-#   - Comments begin with the '#' character
-#   - Blank lines are ignored
-#   - Groups of hosts are delimited by [header] elements
-#   - You can enter hostnames or ip addresses
-#   - A hostname/ip can be a member of multiple groups
+g1-grr-centos-1
+g1-grr-centos-2
+g1-grr-centos-3
+g1-grr-centos-4
 
-# Ex 1: Ungrouped hosts, specify before any group headers.
+g2-grr-centos-1
+g2-grr-centos-2
+g2-grr-centos-3
+g2-grr-centos-4
 
-## green.example.com
-## blue.example.com
-## 192.168.100.1
-## 192.168.100.10
+g3-grr-centos-1
+g3-grr-centos-2
+g3-grr-centos-3
+g3-grr-centos-4
 
-# Ex 2: A collection of hosts belonging to the 'webservers' group
+g4-grr-centos-1
+g4-grr-centos-2
+g4-grr-centos-3
+g4-grr-centos-4
 
-## [webservers]
-## alpha.example.org
-## beta.example.org
-## 192.168.1.100
-## 192.168.1.110
+g5-grr-centos-1
+g5-grr-centos-2
+g5-grr-centos-3
+g5-grr-centos-4
 
-# If you have multiple hosts following a pattern you can specify
-# them like this:
+g6-grr-centos-1
+g6-grr-centos-2
+g6-grr-centos-3
+g6-grr-centos-4
 
-## www[001:006].example.com
+g7-grr-centos-1
+g7-grr-centos-2
+g7-grr-centos-3
+g7-grr-centos-4
 
-# Ex 3: A collection of database servers in the 'dbservers' group
+g8-grr-centos-1
+g8-grr-centos-2
+g8-grr-centos-3
+g8-grr-centos-4
 
-## [dbservers]
-## 
-## db01.intranet.mydomain.net
-## db02.intranet.mydomain.net
-## 10.25.1.56
-## 10.25.1.57
+steve-grr-centos-1
+steve-grr-centos-2
+steve-grr-centos-3
+steve-grr-centos-4
 
-# Here's another example of host ranges, this time there are no
-# leading 0s:
+[grr_centos_client]
+g[1:8]-grr-centos-[1:4]
+steve-grr-centos-[1:4]
 
-## db-[99:101]-node.example.com
+[grr_client_1]
+g[1:8]-grr-centos-1
+steve-grr-centos-1
 
+[grr_client_2]
+g[1:8]-grr-centos-2
+steve-grr-centos-2
 
-[grr_centos_client_1]
-g[1:10]-grr-centos-1
+[grr_client_3]
+g[1:8]-grr-centos-3
+steve-grr-centos-3
 
-[grr_centos_client_2]
-g[1:10]-grr-centos-2
+[grr_client_4]
+g[1:8]-grr-centos-4
+steve-grr-centos-4
 
-[grr_centos_client_3]
-g[1:10]-grr-centos-3
-
-[grr_centos_client_4]
-g[1:10]-grr-centos-4
+[grr_client_test]
+g8-grr-centos-1

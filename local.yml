@@ -1,13 +1,12 @@
+import_playbook: ansible_pull.yml
+
 - hosts: localhost
   become: true
   pre_tasks:
     - name: update_repositories
       yum: update_cache=yes
-      changed_when: False
 
   tasks:
-#    - include: tasks/packages.yml
-    - include: tasks/ansible_pull.yml
     - include: tasks/users.yml
 
 - hosts: g8-grr-centos-1

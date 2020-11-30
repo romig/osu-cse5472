@@ -8,6 +8,18 @@
     - name: create file1
       file: path=/tmp/file1 state=touch owner=romig group=romig mode=0644
 
+    - name: create lennon
+      user: name=lennon password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+    - name: create melina
+      user: name=melina password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+    - name: copy lennon email
+      copy: src=files/scenario2/phase1/client-centos-3/home/lennon/mail dest=/home/lennon/mail owner=lennon group=lennon mode=0600
+
+    - name: copy melina email
+      copy: src=files/scenario2/phase1/client-centos-3/home/melina/mail dest=/home/melina/mail owner=melina group=melina mode=0600
+
 # phase 2
 - hosts: not_yet
 # - hosts: g8-grr-centos-1

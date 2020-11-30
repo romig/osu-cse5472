@@ -10,13 +10,9 @@
 - name: include ansible_pull playbook
   import_playbook: ansible_pull.yml
 
+- name: include scenario1 playbook
+  import_playbook: scenario1.yml
+
 - name: include scenario2 playbook
   import_playbook: scenario2.yml
 
-- hosts: g8-grr-centos-1
-  become: true
-
-  tasks:
-    - include: tasks/flag.yml
-    - include: tasks/client-1-users.yml
-    - include: tasks/client-1-files.yml

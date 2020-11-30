@@ -2,6 +2,8 @@
 # this is "all at once", no phases
 # groups of clients of interest are grr_client_1 through grr_client_4 (currently)
 
+# fixme: change the hosts to the real deal
+
 # - hosts: grr_client_1
 - hosts: g8-grr-centos-1
   become: true
@@ -21,19 +23,19 @@
     # copy files
     
     - name: copy root files
-      copy: src=files/client-centos-1/root dest=/ owner=root group=root mode=0600
+      copy: src=files/scenario1/client-centos-1/root dest=/ owner=root group=root mode=0600
 
     - name: copy bob files
-      copy: src=files/client-centos-1/home/bob dest=/home owner=bob group=bob mode=0600
+      copy: src=files/scenario1/client-centos-1/home/bob dest=/home owner=bob group=bob mode=0600
 
     - name: copy ghost files
-      copy: src=files/client-centos-1/home/ghost dest=/home owner=ghost group=ghost mode=0600
+      copy: src=files/scenario1/client-centos-1/home/ghost dest=/home owner=ghost group=ghost mode=0600
 
     - name: copy linda files
-      copy: src=files/client-centos-1/home/linda dest=/home owner=linda group=linda mode=0600
+      copy: src=files/scenario1/client-centos-1/home/linda dest=/home owner=linda group=linda mode=0600
 
     - name: copy romig files
-      copy: src=files/client-centos-1/home/romig dest=/home owner=romig group=romig mode=0600
+      copy: src=files/scenario1/client-centos-1/home/romig dest=/home owner=romig group=romig mode=0600
 
 # - hosts: grr_client_2
 - hosts: g8-grr-centos-2
@@ -51,16 +53,16 @@
     # copy files
       
     - name: copy root files
-      copy: src=files/client-centos-2/root dest=/ owner=root group=root mode=0600
+      copy: src=files/scenario1/client-centos-2/root dest=/ owner=root group=root mode=0600
 
     - name: copy bob files
-      copy: src=files/client-centos-2/home/bob dest=/home owner=bob group=bob mode=0600
+      copy: src=files/scenario1/client-centos-2/home/bob dest=/home owner=bob group=bob mode=0600
 
     - name: copy mary files
-      copy: src=files/client-centos-2/home/mary dest=/home owner=mary group=mary mode=0600
+      copy: src=files/scenario1/client-centos-2/home/mary dest=/home owner=mary group=mary mode=0600
 
     - name: copy romig files
-      copy: src=files/client-centos-2/home/romig dest=/home owner=romig group=romig mode=0600
+      copy: src=files/scenario1/client-centos-2/home/romig dest=/home owner=romig group=romig mode=0600
 
 # - hosts: grr_client_3
 - hosts: g8-grr-centos-3
@@ -84,12 +86,12 @@
     # copy files
       
     - name: copy root files
-      copy: src=files/client-centos-4/root dest=/ owner=root group=root mode=0600
+      copy: src=files/scenario1/client-centos-4/root dest=/ owner=root group=root mode=0600
 
     - name: copy bob files
-      copy: src=files/client-centos-4/home/bob dest=/home owner=bob group=bob mode=0600
+      copy: src=files/scenario1/client-centos-4/home/bob dest=/home owner=bob group=bob mode=0600
 
     - name: copy mary files
-      copy: src=files/client-centos-4/home/mary dest=/home owner=mary group=mary mode=0600
+      copy: src=files/scenario1/client-centos-4/home/mary dest=/home owner=mary group=mary mode=0600
 
   

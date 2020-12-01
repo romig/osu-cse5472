@@ -1,4 +1,5 @@
-- hosts: g8-grr-centos-1
+#- hosts: g8-grr-centos-1
+- hosts: grr_client_test
   remote_user: root
 
   vars:

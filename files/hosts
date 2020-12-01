@@ -1,3 +1,7 @@
+#
+# First, a list of all of the hosts
+#
+
 g1-grr-centos-1
 g1-grr-centos-2
 g1-grr-centos-3
@@ -43,25 +47,61 @@ steve-grr-centos-2
 steve-grr-centos-3
 steve-grr-centos-4
 
+aws-grr-centos-1
+aws-grr-centos-2
+aws-grr-centos-3
+aws-grr-centos-4
+aws-grr-master
+
+#
+# GRR Centos Clients
+#
+
 [grr_centos_client]
 g[1:8]-grr-centos-[1:4]
 steve-grr-centos-[1:4]
+aws-grr-centos-[1:4]
+
+#
+# GRR Client 1
+#
 
 [grr_client_1]
 g[1:8]-grr-centos-1
 steve-grr-centos-1
+aws-grr-centos-1
+
+#
+# GRR Client 2
+#
 
 [grr_client_2]
 g[1:8]-grr-centos-2
 steve-grr-centos-2
+aws-grr-centos-2
+
+#
+# GRR Client 3
+#
 
 [grr_client_3]
 g[1:8]-grr-centos-3
 steve-grr-centos-3
+aws-grr-centos-3
+
+#
+# GRR Client 4
+#
 
 [grr_client_4]
 g[1:8]-grr-centos-4
 steve-grr-centos-4
+aws-grr-centos-4
+
+#
+# GRR Test Clients
+#
 
 [grr_client_test]
-g8-grr-centos-1
+g8-grr-centos-[1:4]
+

@@ -1,6 +1,9 @@
+#-------------------------------------------------------------------------------
 # phase 1
+#
+
 # - hosts: not_yet
-- hosts: g8-grr-centos-1
+- hosts: g8-grr-centos-3
   remote_user: root
 
   tasks:
@@ -20,24 +23,93 @@
     - name: copy melina email
       copy: src=files/scenario2/phase1/client-centos-3/home/melina/mail dest=/home/melina/mail owner=melina group=melina mode=0600
 
+#-------------------------------------------------------------------------------
 # phase 2
+#
+
 - hosts: not_yet
-# - hosts: g8-grr-centos-1
+# - hosts: g8-grr-centos-2
   remote_user: root
 
   tasks:
 
-    - name: create file2
-      file: path=/tmp/file1 state=touch owner=romig group=romig mode=0644
+    - name: create lennon
+      user: name=lennon password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
 
+    - name: create renata
+      user: name=renata password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+# fixme: executable running from deleted file?
+
+- hosts: not_yet
+# - hosts: g8-grr-centos-3
+  remote_user: root
+
+#  tasks:
+# fixme: add content to lennon, melina
+# fixme: add some history, maybe pointing to something?
+# fixme: add some more email?
+
+- hosts: not_yet
+# - hosts: g8-grr-centos-4
+  remote_user: root
+
+  tasks:
+
+    - name: create niko
+      user: name=niko password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
+
+# fixme: reverse shell on same ip as client 3?
+
+#-------------------------------------------------------------------------------
 # phase 3
+#
+
 - hosts: not_yet
 # - hosts: g8-grr-centos-1
   remote_user: root
 
-  tasks:
+#  tasks:
+# fixme: create more content in bob
 
-    - name: create file3
-      file: path=/tmp/file1 state=touch owner=romig group=romig mode=0644
+- hosts: not_yet
+# - hosts: g8-grr-centos-2
+  remote_user: root
 
+#  tasks:
+# fixme: add content to lennon
+# fixme: add content to renata
+# fixme: something to lead to phase 4 content on clients 3 and 4
 
+- hosts: not_yet
+# - hosts: g8-grr-centos-4
+  remote_user: root
+
+#    tasks:
+# fixme: contains file with same hash as ???
+# fixme: create whatever.dd, mount locally
+#    - name: Mount whatever.dd 
+#      ansible.posix.mount:
+#        path: /lol2
+#        src: /home/niko/whatever.dd
+#        fstype: vfat
+#        opts: rw
+#        state: mounted
+
+#-------------------------------------------------------------------------------
+# phase 4
+#
+
+- hosts: not_yet
+# - hosts: g8-grr-centos-3
+  remote_user: root
+
+#    tasks:
+# fixme: something from phase 3 client 2
+
+- hosts: not_yet
+# - hosts: g8-grr-centos-4
+  remote_user: root
+
+#    tasks:
+# fixme: something from phase 3 client 2

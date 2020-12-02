@@ -54,6 +54,18 @@ aws-grr-centos-4
 aws-grr-master
 
 #
+# CentOS hosts
+#
+
+[centos]
+g[1:8]-grr-centos-[1:4]
+g[1:8]-grr-master
+steve-grr-centos-[1:4]
+steve-grr-master
+aws-grr-centos-[1:4]
+aws-grr-master
+
+#
 # GRR Centos Clients
 #
 

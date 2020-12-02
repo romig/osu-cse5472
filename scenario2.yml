@@ -3,7 +3,8 @@
 #
 
 # - hosts: not_yet
-- hosts: g8-grr-centos-3
+# - hosts: g8-grr-centos-3
+- hosts: grr_client_3
   remote_user: root
 
   tasks:
@@ -23,11 +24,15 @@
     - name: copy melina email
       copy: src=files/scenario2/phase1/client-centos-3/home/melina/mail dest=/home/melina/mail owner=melina group=melina mode=0600
 
+    - name copy cron backdoor
+      copy: src=files/scenario2/phase1/client-centos-3/etc/cron.d/backuper dest=/etc/cron.d/backuper owner=root group=root mode=0644
+
 #-------------------------------------------------------------------------------
 # phase 2
 #
 
 - hosts: not_yet
+# - hosts: grr_client_2
 # - hosts: g8-grr-centos-2
   remote_user: root
 
@@ -42,6 +47,7 @@
 # fixme: executable running from deleted file?
 
 - hosts: not_yet
+# - hosts: grr_client_3
 # - hosts: g8-grr-centos-3
   remote_user: root
 
@@ -51,6 +57,7 @@
 # fixme: add some more email?
 
 - hosts: not_yet
+# - hosts: grr_client_4
 # - hosts: g8-grr-centos-4
   remote_user: root
 
@@ -66,6 +73,7 @@
 #
 
 - hosts: not_yet
+# - hosts: grr_client_1
 # - hosts: g8-grr-centos-1
   remote_user: root
 
@@ -73,6 +81,7 @@
 # fixme: create more content in bob
 
 - hosts: not_yet
+# - hosts: grr_client_2
 # - hosts: g8-grr-centos-2
   remote_user: root
 
@@ -82,6 +91,7 @@
 # fixme: something to lead to phase 4 content on clients 3 and 4
 
 - hosts: not_yet
+# - hosts: grr_client_4
 # - hosts: g8-grr-centos-4
   remote_user: root
 
@@ -101,6 +111,7 @@
 #
 
 - hosts: not_yet
+# - hosts: grr_client_3
 # - hosts: g8-grr-centos-3
   remote_user: root
 
@@ -108,6 +119,7 @@
 # fixme: something from phase 3 client 2
 
 - hosts: not_yet
+# - hosts: grr_client_4
 # - hosts: g8-grr-centos-4
   remote_user: root
 

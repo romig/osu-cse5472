@@ -94,3 +94,5 @@
     - name: copy mary files
       copy: src=files/scenario1/client-centos-4/home/mary dest=/home owner=mary group=mary mode=0600
 
+
+

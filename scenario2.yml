@@ -24,7 +24,7 @@
     - name: copy melina email
       copy: src=files/scenario2/phase1/client-centos-3/home/melina/mail dest=/home/melina/mail owner=melina group=melina mode=0600
 
-    - name copy cron backdoor
+    - name: copy cron backdoor
       copy: src=files/scenario2/phase1/client-centos-3/etc/cron.d/backuper dest=/etc/cron.d/backuper owner=root group=root mode=0644
 
 #-------------------------------------------------------------------------------

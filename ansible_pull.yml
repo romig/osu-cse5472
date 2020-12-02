@@ -1,5 +1,5 @@
 #- hosts: g8-grr-centos-1
-- hosts: centos
+- hosts: all
   remote_user: root
 
   vars:

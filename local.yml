@@ -4,8 +4,8 @@
     - name: update_repositories
       yum: update_cache=yes
 
-  tasks:
-    - include: tasks/users.yml
+#  tasks:
+#    - include: tasks/users.yml
 
 - name: include ansible_pull playbook
   import_playbook: ansible_pull.yml

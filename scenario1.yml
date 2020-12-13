@@ -23,6 +23,10 @@
       # user: name=linda password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create groups='wheel'
       user: name=linda password="!" update_password=always groups='wheel'
 
+    - name: create romig
+      # user: name=romig password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create groups='wheel'
+      user: name=romig password="!" update_password=always groups='wheel'
+
     # copy files
     
     - name: copy root files

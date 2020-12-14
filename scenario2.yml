@@ -14,11 +14,11 @@
 
     - name: create lennon
       # user: name=lennon password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=lennon password="!" update_password=always
+      user: name=lennon password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: create melina
       # user: name=melina password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=melina password="!" update_password=always
+      user: name=melina password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: copy lennon email
       copy: src=files/scenario2/phase1/client-centos-3/home/lennon/mail dest=/home/lennon/mail owner=lennon group=lennon mode=0600
@@ -42,11 +42,11 @@
 
     - name: create lennon
       # user: name=lennon password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=lennon password="!" update_password=always
+      user: name=lennon password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: create renata
       # user: name=renata password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=renata password="!" update_password=always
+      user: name=renata password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
 # fixme: executable running from deleted file?
 
@@ -69,7 +69,7 @@
 
     - name: create niko
       # user: name=niko password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=niko password="!" update_password=always
+      user: name=niko password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
 # fixme: reverse shell on same ip as client 3?
 

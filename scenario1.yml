@@ -13,19 +13,19 @@
     
     - name: create bob
       # user: name=bob password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=bob password="!" update_password=always
+      user: name=bob password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: create ghost
       # user: name=ghost password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=ghost password="!" update_password=always
+      user: name=ghost password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: create linda
       # user: name=linda password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create groups='wheel'
-      user: name=linda password="!" update_password=always groups='wheel'
+      user: name=linda password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always groups='wheel'
 
     - name: create romig
       # user: name=romig password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create groups='wheel'
-      user: name=romig password="!" update_password=always groups='wheel'
+      user: name=romig password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always groups='wheel'
 
     # copy files
     
@@ -53,15 +53,15 @@
 
     - name: create bob
       # user: name=bob password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=bob password="!" update_password=always
+      user: name=bob password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: create mary
       # user: name=mary password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=mary password="!" update_password=always
+      user: name=mary password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: create romig
       # user: name=romig password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=romig password="!" update_password=always
+      user: name=romig password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     # copy files
       
@@ -92,11 +92,11 @@
 
     - name: create bob
       # user: name=bob password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=bob password="!" update_password=always
+      user: name=bob password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     - name: create mary
       # user: name=mary password="$6$LqBRjHW9$Ly0CmYynwUfmNVMhuawnA4v4Xclv2YL/hITb2l6D/ayShc7KTUjUF8keT0N5m7AXJ/TZgBJe7ZMQNq/bqNg3b/" update_password=on_create
-      user: name=mary password="!" update_password=always
+      user: name=mary password="$6$WoNJOnlK$Sul6AuhPqC0XxBJ0xx3Yhc33nMv2gBi/7aSDN4nK6KeR1N5Y71Rfq/jHmv.75rpFs79T9Hi9hNclbRGTaoWlJ0" update_password=always
 
     # copy files
       

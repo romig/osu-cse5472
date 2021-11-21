@@ -2,9 +2,9 @@
 # phase 1
 #
 
-- hosts: not_yet
+# - hosts: not_yet
 # - hosts: g8-grr-centos-3
-# - hosts: grr_client_3
+- hosts: grr_client_3
   remote_user: root
 
   tasks:
@@ -33,8 +33,8 @@
 # phase 2
 #
 
-- hosts: not_yet
-# - hosts: grr_client_2
+# - hosts: not_yet
+- hosts: grr_client_2
 # - hosts: g8-grr-centos-2
   remote_user: root
 
@@ -50,8 +50,8 @@
 
 # fixme: executable running from deleted file?
 
-- hosts: not_yet
-# - hosts: grr_client_3
+# - hosts: not_yet
+- hosts: grr_client_3
 # - hosts: g8-grr-centos-3
   remote_user: root
 
@@ -60,8 +60,8 @@
 # fixme: add some history, maybe pointing to something?
 # fixme: add some more email?
 
-- hosts: not_yet
-# - hosts: grr_client_4
+# - hosts: not_yet
+- hosts: grr_client_4
 # - hosts: g8-grr-centos-4
   remote_user: root
 
@@ -77,16 +77,16 @@
 # phase 3
 #
 
-- hosts: not_yet
-# - hosts: grr_client_1
+# - hosts: not_yet
+- hosts: grr_client_1
 # - hosts: g8-grr-centos-1
   remote_user: root
 
 #  tasks:
 # fixme: create more content in bob
 
-- hosts: not_yet
-# - hosts: grr_client_2
+# - hosts: not_yet
+- hosts: grr_client_2
 # - hosts: g8-grr-centos-2
   remote_user: root
 
@@ -95,8 +95,8 @@
 # fixme: add content to renata
 # fixme: something to lead to phase 4 content on clients 3 and 4
 
-- hosts: not_yet
-# - hosts: grr_client_4
+# - hosts: not_yet
+- hosts: grr_client_4
 # - hosts: g8-grr-centos-4
   remote_user: root
 
@@ -115,16 +115,16 @@
 # phase 4
 #
 
-- hosts: not_yet
-# - hosts: grr_client_3
+# - hosts: not_yet
+- hosts: grr_client_3
 # - hosts: g8-grr-centos-3
   remote_user: root
 
 #    tasks:
 # fixme: something from phase 3 client 2
 
-- hosts: not_yet
-# - hosts: grr_client_4
+# - hosts: not_yet
+- hosts: grr_client_4
 # - hosts: g8-grr-centos-4
   remote_user: root
 

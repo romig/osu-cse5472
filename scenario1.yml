@@ -4,8 +4,9 @@
 
 # fixme: change the hosts to the real deal
 
-- hosts: grr_test_client_1
+#- hosts: grr_test_client_1
 #- hosts: g8-grr-centos-1
+- hosts: grr_client_1
   become: true
 
   tasks:
@@ -44,8 +45,9 @@
     - name: copy romig files
       copy: src=files/scenario1/client-centos-1/home/romig dest=/home owner=romig group=romig mode=0600
 
-- hosts: grr_test_client_2
+#- hosts: grr_test_client_2
 #- hosts: g8-grr-centos-2
+- hosts: grr_client_2
   become: true
 
   tasks:
@@ -77,14 +79,16 @@
     - name: copy romig files
       copy: src=files/scenario1/client-centos-2/home/romig dest=/home owner=romig group=romig mode=0600
 
-- hosts: grr_test_client_3
+#- hosts: grr_test_client_3
 #- hosts: g8-grr-centos-3
+- hosts: grr_client_3
   become: true
 
   tasks: 
 
-- hosts: grr_test_client_4
+#- hosts: grr_test_client_4
 #- hosts: g8-grr-centos-4
+- hosts: grr_client_4
   become: true
 
   tasks:
